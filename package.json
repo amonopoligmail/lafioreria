@@ -1,0 +1,13 @@
+{
+  "name": "la-fioreria-di-anna-static",
+  "version": "1.0.0",
+  "description": "Sito statico per La Fioreria di Anna",
+  "scripts": {
+    "dev": "vite",
+    "build": "mkdir -p dist && cp -r assets index.html chi-siamo.html servizi.html contatti.html prodotto-tulipani.html dist/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.3"
+  }
+}

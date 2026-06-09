@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimoni | LaFioreriaDiAnna</title>
+    <meta name="description" content="Servizio floreale per matrimoni a Susa. Bouquet da sposa, allestimenti e consulenza personalizzata.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                colors: { sage: '#768875', cream: '#fcfaf4', accent: '#b58d67' },
+                fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] }
+            }}
+        }
+    </script>
+    <style>
+        body { background-color: #fcfaf4; }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+        @keyframes fadeIn { to { opacity: 1; } }
+        .slide-up { animation: slideUp 0.8s ease-out forwards; opacity: 0; transform: translateY(30px); }
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="font-sans text-stone-800 bg-cream">
+    <header class="sticky top-0 z-50 bg-[#fcfaf4]/80 backdrop-blur-md border-b border-sage/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="flex flex-col text-sage"><span class="font-serif text-2xl tracking-tighter leading-none">LaFioreriaDiAnna</span></a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#prodotti" class="text-sm text-stone-600 hover:text-sage transition-colors">Fiori</a>
+                <a href="chi-siamo.html" class="text-sm text-stone-600 hover:text-sage transition-colors">Chi Siamo</a>
+                <a href="servizi.html" class="text-sage font-bold text-sm">Servizi</a>
+                <a href="contatti.html" class="text-sm text-stone-600 hover:text-sage transition-colors">Contatti</a>
+            </nav>
+            <div class="flex items-center space-x-5">
+                <a href="contatti.html" class="bg-sage text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-accent transition-colors">Contattaci</a>
+                <button id="mobile-menu-button" class="md:hidden text-stone-600"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-sage/10">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html#prodotti" class="block text-stone-600 font-medium text-lg">Fiori</a>
+                <a href="chi-siamo.html" class="block text-stone-600 font-medium text-lg">Chi Siamo</a>
+                <a href="servizi.html" class="block text-stone-600 font-medium text-lg">Servizi</a>
+                <a href="contatti.html" class="block text-stone-600 font-medium text-lg">Contatti</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pb-20">
+        <section class="relative overflow-hidden bg-sage py-28 md:py-36">
+            <div class="absolute inset-0 opacity-20"><img src="assets/images/f2_new.png" alt="" class="w-full h-full object-cover"></div>
+            <div class="relative max-w-7xl mx-auto px-4 text-center text-cream">
+                <a href="servizi.html" class="inline-flex items-center text-cream/70 hover:text-cream text-sm font-medium mb-8 transition-colors group">
+                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform"></i> Tutti i Servizi
+                </a>
+                <h1 class="font-serif text-5xl md:text-7xl fade-in">Matrimoni</h1>
+                <p class="max-w-2xl mx-auto mt-6 opacity-80 text-lg slide-up" style="animation-delay:0.2s">Dalla chiesa al ricevimento, curiamo ogni dettaglio floreale per rendere indimenticabile il tuo giorno più bello.</p>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 -mt-16 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                <!-- Info -->
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-xl border border-stone-100">
+                        <h2 class="font-serif text-3xl mb-6">Il Nostro Servizio</h2>
+                        <p class="text-stone-500 text-sm leading-relaxed mb-8">Con oltre 30 anni di esperienza nella Valle di Susa, creiamo composizioni floreali che riflettono la vostra personalità e il tema del vostro matrimonio.</p>
+                        <div class="space-y-5">
+                            <div class="flex items-start space-x-4"><div class="p-2 bg-sage/10 text-sage rounded-xl flex-shrink-0"><i data-lucide="flower-2" class="w-5 h-5"></i></div><div><h4 class="font-medium text-sm">Bouquet da Sposa</h4><p class="text-xs text-stone-400 mt-1">Design personalizzato con i tuoi fiori preferiti</p></div></div>
+                            <div class="flex items-start space-x-4"><div class="p-2 bg-sage/10 text-sage rounded-xl flex-shrink-0"><i data-lucide="church" class="w-5 h-5"></i></div><div><h4 class="font-medium text-sm">Allestimento Chiesa</h4><p class="text-xs text-stone-400 mt-1">Decorazioni per altare, navata e banchi</p></div></div>
+                            <div class="flex items-start space-x-4"><div class="p-2 bg-sage/10 text-sage rounded-xl flex-shrink-0"><i data-lucide="utensils" class="w-5 h-5"></i></div><div><h4 class="font-medium text-sm">Centrotavola Ricevimento</h4><p class="text-xs text-stone-400 mt-1">Composizioni eleganti per ogni tavolo</p></div></div>
+                            <div class="flex items-start space-x-4"><div class="p-2 bg-sage/10 text-sage rounded-xl flex-shrink-0"><i data-lucide="sparkles" class="w-5 h-5"></i></div><div><h4 class="font-medium text-sm">Bottoniere e Corsage</h4><p class="text-xs text-stone-400 mt-1">Dettagli per sposo, testimoni e damigelle</p></div></div>
+                        </div>
+                    </div>
+                    <div class="bg-sage/5 p-8 rounded-[2rem] border border-sage/10">
+                        <div class="flex items-center space-x-3 mb-4"><i data-lucide="info" class="w-5 h-5 text-sage"></i><h4 class="font-serif text-lg">Buono a sapersi</h4></div>
+                        <ul class="text-sm text-stone-500 space-y-2">
+                            <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0 mt-0.5"></i><span>Consulenza iniziale gratuita</span></li>
+                            <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0 mt-0.5"></i><span>Sopralluogo incluso nella Valle di Susa</span></li>
+                            <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0 mt-0.5"></i><span>Preventivo dettagliato e trasparente</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-3">
+                    <form action="invia_mail.php" method="post" class="bg-white p-10 md:p-12 rounded-[2.5rem] shadow-xl space-y-6 border border-stone-100">
+                        <div><h3 class="font-serif text-3xl mb-2">Richiedi Informazioni</h3><p class="text-stone-400 text-sm">Compila il modulo e ti ricontatteremo entro 24 ore.</p></div>
+                        <input type="hidden" name="Servizio" value="Matrimonio">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Nome *</label><input type="text" name="Nome" required placeholder="Il tuo nome" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent"></div>
+                            <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Cognome *</label><input type="text" name="Cognome" required placeholder="Il tuo cognome" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Email *</label><input type="email" name="Email" required placeholder="La tua email" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent"></div>
+                            <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Telefono</label><input type="tel" name="Telefono" placeholder="Il tuo numero" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Data Matrimonio</label><input type="date" name="DataMatrimonio" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent"></div>
+                            <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Luogo Cerimonia</label><input type="text" name="Luogo" placeholder="Chiesa, location..." class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent"></div>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Servizi Richiesti</label>
+                            <div class="grid grid-cols-2 gap-3 mt-3">
+                                <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 hover:border-sage/40 cursor-pointer transition-colors"><input type="checkbox" name="BouquetSposa" value="Si" class="accent-sage w-4 h-4"><span class="text-sm">Bouquet sposa</span></label>
+                                <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 hover:border-sage/40 cursor-pointer transition-colors"><input type="checkbox" name="Chiesa" value="Si" class="accent-sage w-4 h-4"><span class="text-sm">Allestimento chiesa</span></label>
+                                <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 hover:border-sage/40 cursor-pointer transition-colors"><input type="checkbox" name="Centrotavola" value="Si" class="accent-sage w-4 h-4"><span class="text-sm">Centrotavola</span></label>
+                                <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 hover:border-sage/40 cursor-pointer transition-colors"><input type="checkbox" name="Bottoniere" value="Si" class="accent-sage w-4 h-4"><span class="text-sm">Bottoniere</span></label>
+                            </div>
+                        </div>
+                        <div><label class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2 block">Messaggio</label><textarea name="Messaggio" rows="4" placeholder="Raccontaci la tua idea, il tema, i colori..." class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-sage transition-colors bg-transparent resize-none"></textarea></div>
+                        <button type="submit" class="w-full bg-sage text-white px-10 py-4 rounded-full font-bold hover:bg-accent transition-all hover:shadow-lg flex items-center justify-center group">Invia Richiesta <i data-lucide="send" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

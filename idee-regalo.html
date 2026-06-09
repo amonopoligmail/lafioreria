@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idee Regalo | LaFioreriaDiAnna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { sage: '#768875', cream: '#fcfaf4', accent: '#b58d67' },
+                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-stone-800 bg-cream">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#fcfaf4]/80 backdrop-blur-md border-b border-[#768875]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex flex-col items-start text-sage">
+                    <span class="font-serif text-2xl tracking-tighter leading-none">LaFioreriaDiAnna</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-sans ml-1">Susa, Italy</span>
+                </a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="prodotti.html" class="text-stone-600 hover:text-sage font-medium text-sm transition-colors">Fiori</a>
+                    <a href="idee-regalo.html" class="text-sage font-bold text-sm transition-colors border-b-2 border-sage">Idee Regalo</a>
+                    <a href="servizi.html" class="text-stone-600 hover:text-sage font-medium text-sm transition-colors">Servizi</a>
+                    <a href="cura-piante.html" class="text-stone-600 hover:text-sage font-medium text-sm transition-colors">Cura Piante</a>
+                    <a href="chi-siamo.html" class="text-stone-600 hover:text-sage font-medium text-sm transition-colors">Chi Siamo</a>
+                </nav>
+
+                <div class="flex items-center space-x-5">
+                    <button class="text-stone-600 hover:text-sage transition-colors"><i data-lucide="search" class="w-5 h-5"></i></button>
+                    <a href="contatti.html" class="bg-sage text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-accent transition-colors">Contattaci</a>
+                    <button id="mobile-menu-button" class="md:hidden text-stone-600 hover:text-sage transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-sage/10">
+            <div class="px-4 py-6 space-y-4">
+                <a href="prodotti.html" class="block text-stone-600 font-medium text-lg">Fiori</a>
+                <a href="idee-regalo.html" class="block text-sage font-bold text-lg">Idee Regalo</a>
+                <a href="servizi.html" class="block text-stone-600 font-medium text-lg">Servizi</a>
+                <a href="cura-piante.html" class="block text-stone-600 font-medium text-lg">Cura Piante</a>
+                <a href="chi-siamo.html" class="block text-stone-600 font-medium text-lg">Chi Siamo</a>
+                <a href="contatti.html" class="block text-stone-600 font-medium text-lg">Contatti</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pb-24 relative overflow-hidden">
+        <!-- Decorative Ornament Top Right -->
+        <div class="absolute top-0 right-0 w-64 md:w-96 opacity-40 pointer-events-none -z-10 transform translate-x-1/3 -translate-y-1/3">
+            <img src="../../.gemini/antigravity/brain/0e26a00a-4c36-4405-b23a-7b584a19d00a/floral_ornament_1779217904374.png" alt="" class="w-full h-auto">
+        </div>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center relative">
+            <span class="text-sage font-medium text-xs tracking-widest uppercase mb-4 block">Pensieri Speciali</span>
+            <h1 class="font-serif text-5xl md:text-7xl mb-6">Idee Regalo</h1>
+            <p class="max-w-2xl mx-auto text-stone-500 text-lg leading-relaxed">
+                Trova il regalo perfetto per sorprendere chi ami. Dai set eleganti per la casa, alle box profumate con fiori selezionati e candele artigianali.
+            </p>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1572979267156-f40449526716?auto=format&fit=crop&q=80&w=800" alt="Box Floreale" class="rounded-[2.5rem] shadow-xl w-full h-96 object-cover">
+                </div>
+                <div class="order-1 md:order-2 space-y-6">
+                    <span class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Esclusivo</span>
+                    <h2 class="font-serif text-4xl">Flower Box & Candela</h2>
+                    <p class="text-stone-500 leading-relaxed">
+                        Un'elegante scatola che racchiude boccioli freschi e una candela profumata in cera di soia, colata a mano in Italia. Un'esperienza sensoriale completa per regalare relax e bellezza.
+                    </p>
+                    <a href="mailto:info@LaFioreriadiAnna.it?subject=Richiesta%20Info%20Flower%20Box" class="inline-flex items-center justify-center bg-sage text-white px-8 py-4 rounded-full font-bold hover:bg-accent transition-colors group">
+                        Richiedi Informazioni <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="space-y-6">
+                    <span class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Unico</span>
+                    <h2 class="font-serif text-4xl">Terrarium Artigianali</h2>
+                    <p class="text-stone-500 leading-relaxed">
+                        Piccoli ecosistemi in vetro, creati su misura per te. Perfetti per chi ama la natura ma ha poco tempo per prendersene cura. Un regalo di design, duraturo ed elegante, perfetto per scrivanie e mensole.
+                    </p>
+                    <a href="mailto:info@LaFioreriadiAnna.it?subject=Richiesta%20Info%20Terrarium" class="inline-flex items-center justify-center bg-sage text-white px-8 py-4 rounded-full font-bold hover:bg-accent transition-colors group">
+                        Richiedi Informazioni <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1594894676579-242634e569cb?auto=format&fit=crop&q=80&w=800" alt="Terrarium" class="rounded-[2.5rem] shadow-xl w-full h-96 object-cover">
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-[3rem] p-12 text-center shadow-sm border border-stone-100">
+                <h3 class="font-serif text-3xl mb-4">Gift Card LaFioreriaDiAnna</h3>
+                <p class="text-stone-500 mb-8 max-w-lg mx-auto">Non sai cosa scegliere? Regala la libertà di fiorire. La nostra Gift Card è valida su tutto il catalogo, inclusi i workshop.</p>
+                <a href="mailto:info@LaFioreriadiAnna.it?subject=Acquisto%20Gift%20Card" class="inline-flex items-center justify-center border-2 border-sage text-sage px-8 py-3 rounded-full font-bold hover:bg-sage hover:text-white transition-colors">
+                    Acquista Gift Card
+                </a>
+            </div>
+        </section>
+        
+        <!-- Decorative Ornament Bottom Left -->
+        <div class="absolute bottom-0 left-0 w-64 md:w-96 opacity-40 pointer-events-none -z-10 transform -translate-x-1/3 translate-y-1/3 rotate-180">
+            <img src="../../.gemini/antigravity/brain/0e26a00a-4c36-4405-b23a-7b584a19d00a/floral_ornament_1779217904374.png" alt="" class="w-full h-auto">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-sage text-cream pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="flex flex-col">
+                        <span class="font-serif text-3xl tracking-tighter">LaFioreriaDiAnna</span>
+                        <span class="text-xs uppercase tracking-[0.2em] opacity-70 mt-1">Susa, Italy</span>
+                    </div>
+                    <p class="text-sm opacity-80 leading-relaxed font-sans max-w-xs">
+                        Esprimiamo emozioni attraverso l'arte floreale dal 1920. Ogni composizione è una storia di bellezza e cura artigianale.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-accent transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl mb-6">Navigazione</h4>
+                    <ul class="space-y-4 text-sm font-sans opacity-80">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="prodotti.html" class="hover:text-accent transition-colors">Catalogo Fiori</a></li>
+                        <li><a href="idee-regalo.html" class="hover:text-accent transition-colors">Idee Regalo</a></li>
+                        <li><a href="cura-piante.html" class="hover:text-accent transition-colors">Cura delle Piante</a></li>
+                        <li><a href="servizi.html" class="hover:text-accent transition-colors">Servizi ed Eventi</a></li>
+                        <li><a href="chi-siamo.html" class="hover:text-accent transition-colors">La Nostra Storia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl mb-6">Contatti</h4>
+                    <ul class="space-y-4 text-sm font-sans opacity-80">
+                        <li class="flex items-center space-x-3"><i data-lucide="map-pin" class="w-5 h-5 text-accent"></i> <span>Via Mazzini, 28, 10059 Susa (TO)</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="phone" class="w-5 h-5 text-accent"></i> <span>0122 32469</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="mail" class="w-5 h-5 text-accent"></i> <span>info@LaFioreriadiAnna.it</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl mb-6">Newsletter</h4>
+                    <form action="mailto:info@LaFioreriadiAnna.it" method="post" enctype="text/plain" class="flex">
+                        <input type="email" name="email" placeholder="La tua email" class="bg-cream/10 border border-cream/20 rounded-l-lg px-4 py-2 w-full focus:outline-none focus:border-accent text-sm">
+                        <button type="submit" class="bg-accent text-white px-4 py-2 rounded-r-lg text-sm font-medium">Invia</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest opacity-60">
+                <p>© 2026 LaFioreriaDiAnna. P.IVA 12345678900</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Termini</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
